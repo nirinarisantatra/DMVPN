@@ -8,23 +8,23 @@ VyOS version 1.2.0-beta1 will be used for this lab because the latest builds hav
 
 Below is the topology that will be used during this lab.
 
-![1_7rDPsRs](/home/santatra/Downloads/VyOS/DMVPN/img/1_7rDPsRs.png)
+![1_7rDPsRs](./img/1_7rDPsRs.png)
 
 It has a hub site called DC-HUB that includes the VyOS-DC and the Quagga router. It also has 4 spokes, each running a VyOS-# router. It will be using a simple IPsec profile for the DMVPN and it will be using iBGP with private AS number 65000 for the BGP. In order to simulate an Internet connection, we will use a 6th VyOS router that will be located between the VyOS-DC and the 4 VyOS spokes and will allow for connectivity between them.
 
-![2_CQR9zDf](/home/santatra/Downloads/VyOS/DMVPN/img/2_CQR9zDf.png)
+![2_CQR9zDf](./img/2_CQR9zDf.png)
 
 This is the lab topology with the Internet being emulated by a single router.
 
-![3_EB6AmTv](/home/santatra/Downloads/VyOS/DMVPN/img/3_EB6AmTv.png)
+![3_EB6AmTv](./img/3_EB6AmTv.png)
 
 IP addresses and VLANs for all "physical" connections.
 
-![4_OQEFuOh](/home/santatra/Downloads/VyOS/DMVPN/img/4_OQEFuOh.png)
+![4_OQEFuOh](./img/4_OQEFuOh.png)
 
 In blue, the DMVPN tunnel IP addresses.
 
-![5_XuXBVhH](/home/santatra/Downloads/VyOS/DMVPN/img/5_XuXBVhH.png)
+![5_XuXBVhH](./img/5_XuXBVhH.png)
 
 In red, the prefixes advertised via BGP.
 
