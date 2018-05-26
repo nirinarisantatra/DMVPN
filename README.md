@@ -48,7 +48,7 @@ eth0.113         203.0.113.113/30                  u/u  VyOS-4
 
 ```
 
-We can see that all of the connections and the routers are pingable from each other. Now that the  basic connectivity is established, it's time to start setting up the DMVPN configuration. Let's start by the hub. Here's the full configuration, for ease of cut-and-paste to your own hub, we'll go through in details after :
+We can see that all of the connections and the routers are pingable from each other. Now that the  basic connectivity is established, it's time to start setting up the DMVPN configuration. Let's start by the hub. Here's the full configuration, for ease of cut-and-paste to our own hub, we'll go through in details after :
 
 ```
 set interfaces tunnel tun0 address 172.25.0.1/24
