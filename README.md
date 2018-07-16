@@ -187,15 +187,14 @@ set vpn ipsec profile NHRPVPN ike-group IKE-Lab
 As we can see, the configuration here is nearly identical to the one used on the hub. Let's have a look at the sections in more detail :
 
 ```
-set interfaces tunnel tun0 address 172.25.0.2/24
+set interfaces tunnel tun0 address 172.25.0.10/24
 set interfaces tunnel tun0 encapsulation gre
 set interfaces tunnel tun0 local-ip 0.0.0.0
 set interfaces tunnel tun0 multicast enable
 set interfaces tunnel tun0 parameters ip key 1
-
 ```
 
-Here we have the tunnel config. An important thing to note is the use of `local-ip 0.0.0.0` which allows for any IP to be used. With this, we can have a DHCP address on our WAN connection and it won't affect the config. The only site that needs a static IP is the hub.
+Here we have the tunnel configuration. An important thing to note is the use of `local-ip 0.0.0.0` which allows for any IP to be used. With this, we can have a DHCP address on our WAN connection and it won't affect the configuration. The only site that needs a static IP is the hub.
 
 ```
 set protocols nhrp tunnel tun0 cisco-authentication PASSWORD
